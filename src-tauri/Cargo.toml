@@ -1,0 +1,16 @@
+[package]
+name = "cpjourney-tauri"
+version = "1.0.0"
+description = "Lanzador de escritorio para Club Penguin Journey"
+authors = ["Local"]
+edition = "2021"
+
+[lib]
+name = "cpjourney_tauri_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
